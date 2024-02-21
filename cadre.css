@@ -65,13 +65,16 @@ div.logoheader h1 {
 }
 
 div.skincilogonlogo {
+    background: transparent url("images/aaf.png") no-repeat top left;
     display: inline;
     margin-top: 12px;
-    margin-right: 8px
+    margin-right: 8px;
+    height: 200px;
+    width: 200px;
 }
 
 div.skincilogonlogo a img {
-    height: 70px
+    display: none
 }
 
 .footer {
