@@ -64,13 +64,15 @@ div.logoheader h1 {
     float: left
 }
 
+/* Maintaining Aspect-Ratio of 1.047 for AAF image */
 div.skincilogonlogo {
     background: transparent url("images/aaf.png") no-repeat top left;
+    background-size: contain;
     display: inline;
     margin-top: 12px;
     margin-right: 8px;
-    height: 200px;
-    width: 200px;
+    height: 205px; 
+    width: 195px;
 }
 
 div.skincilogonlogo a img {
