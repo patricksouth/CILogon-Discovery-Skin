@@ -83,11 +83,6 @@ div.skincilogonlogo a img {
     border: 1px solid #c0c2c5;
     background-color: rgba(5, 0, 0, .03);
     height: auto;
-    padding: 1em 0;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    z-index: -2;
 }
 
 .footer a:link,
