@@ -11,9 +11,11 @@ The CSS is accessible in a number of ways, typically using the `?skin=value`
 For example:
 https://cilogon.org/?skin=access
 
-https://cilogon.org/?skin=biocommons
+https://cilogon.aaf.edu.au/?skin=biocommons
 
-https://dev.cilogon.aaf.edu.au/?skin=cadre
+https://cilogon.aaf.edu.au/?skin=ldaca
+
+https://cilogon.aaf.edu.au/?skin=cadre
 
 https://cilogon.org/?skin=illinois
 
