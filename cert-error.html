@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Get Your Certificate</title>
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap-Select CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css"
+    />
+    <!-- CILogon-specific CSS -->
+    <link rel="stylesheet" href="cilogon.css" />
+    <link rel="stylesheet" href="cadre.css" />
+  </head>
+
+  <body>
+    <div class="skincilogonlogo">
+      <a target="_blank" href="http://www.cilogon.org/faq/"
+        ><img src="poweredbycilogon.png" alt="CILogon" title="CILogon Service"
+      /></a>
+    </div>
+
+    <div class="logoheader">
+      <h1><span>[CILogon Service]</span></h1>
+    </div>
+
+    <div class="mt-4 container-fluid">
+      <!-- Main Bootstrap Container -->
+
+      <noscript>
+        <div class="alert alert-danger alert-dismissible" role="alert">
+          <span
+            ><strong>Notice: </strong> JavaScript is not enabled. The CILogon
+            Service requires JavaScript for functionality.
+            <a
+              target="_blank"
+              href="https://enable-javascript.com/"
+              class="alert-link"
+              >Please Enable JavaScript</a
+            >.</span
+          >
+        </div>
+      </noscript>
+      <div class="alert alert-danger" role="alert">
+        Unable to generate a certificate. Your identity provider has not
+        provided CILogon with all required information.
+      </div>
+      <div class="card col-sm-10 offset-sm-1">
+        <h5 class="card-header text-center">
+          <a
+            class="d-block collapsed"
+            data-toggle="collapse"
+            href="#collapse-certinfo"
+            aria-expanded="false"
+            aria-controls="collapse-certinfo"
+            id="heading-certinfo"
+          >
+            <i class="fa fa-chevron-down pull-right"></i>
+            Certificate Information
+          </a>
+        </h5>
+        <div
+          id="collapse-certinfo"
+          class="collapse"
+          aria-labelledby="heading-certinfo"
+        >
+          <div class="card-body">
+            <div class="alert alert-danger" role="alert">
+              <div class="row">
+                <div class="col-1 align-self-center text-center">
+                  <span
+                    style="
+                      color: red;
+                      -webkit-text-stroke-width: 1px;
+                      -webkit-text-stroke-color: gray;
+                    "
+                    ><i class="fa nocollapse fa-exclamation-circle fa-2x"></i
+                  ></span>
+                </div>
+                <div class="col">
+                  <div class="card-text my-2">
+                    Unable to generate a certificate. Your identity provider has
+                    not provided CILogon with all required information.
+                  </div>
+                  <!-- end card-text -->
+                </div>
+              </div>
+            </div>
+
+            <table class="table table-striped table-sm">
+              <tbody>
+                <tr>
+                  <th class="w-50">Email Address:</th>
+                  <td>MISSING</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- end card-body -->
+        </div>
+        <!-- end collapse-... -->
+      </div>
+      <!-- end card -->
+
+      <div class="card col-sm-10 offset-sm-1">
+        <h5 class="card-header text-center">
+          <a
+            class="d-block collapsed"
+            data-toggle="collapse"
+            href="#collapse-userattrs"
+            aria-expanded="false"
+            aria-controls="collapse-userattrs"
+            id="heading-userattrs"
+          >
+            <i class="fa fa-chevron-down pull-right"></i>
+            User Attributes
+            <span
+              style="
+                color: red;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: gray;
+              "
+              ><span
+                data-trigger="hover"
+                data-toggle="popover"
+                data-html="true"
+                data-content="One or more missing attributes."
+                ><i class="fa nocollapse fa-exclamation-circle"></i></span
+            ></span>
+          </a>
+        </h5>
+        <div
+          id="collapse-userattrs"
+          class="collapse"
+          aria-labelledby="heading-userattrs"
+        >
+          <div class="card-body">
+            <table class="table table-striped table-sm">
+              <tbody>
+                <tr>
+                  <th>CILogon User Identifier:</th>
+                  <td>http://cilogon.org/serverG/users/...</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Identity Provider (entityID):</th>
+                  <td>http://orcid.org/oauth/authorize</td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <th>OpenID:</th>
+                  <td>http://orcid.org/0000-0000-0000-0000</td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <th>First Name (givenName):</th>
+                  <td>Hello</td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <th>Last Name (sn):</th>
+                  <td>World</td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <th>Email Address (email):</th>
+                  <td></td>
+                  <td>
+                    <span
+                      style="
+                        color: red;
+                        -webkit-text-stroke-width: 1px;
+                        -webkit-text-stroke-color: gray;
+                      "
+                      ><span
+                        data-trigger="hover"
+                        data-toggle="popover"
+                        data-html="true"
+                        data-content="Missing valid email address."
+                        ><i
+                          class="fa nocollapse fa-exclamation-circle"
+                        ></i></span
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Level of Assurance (assurance):</th>
+                  <td>openid</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>AuthnMethodRef:</th>
+                  <td>pwd</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>eduPersonOrcid:</th>
+                  <td>http://orcid.org/0000-0000-0000-0000</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- end card-body -->
+        </div>
+        <!-- end collapse-... -->
+      </div>
+      <!-- end card -->
+
+      <div class="card col-sm-10 offset-sm-1">
+        <h5 class="card-header text-center">
+          <a
+            class="d-block collapsed"
+            data-toggle="collapse"
+            href="#collapse-idpmeta"
+            aria-expanded="false"
+            aria-controls="collapse-idpmeta"
+            id="heading-idpmeta"
+          >
+            <i class="fa fa-chevron-down pull-right"></i>
+            Identity Provider Attributes
+          </a>
+        </h5>
+        <div
+          id="collapse-idpmeta"
+          class="collapse"
+          aria-labelledby="heading-idpmeta"
+        >
+          <div class="card-body">
+            <table class="table table-striped table-sm">
+              <tbody>
+                <tr>
+                  <th>Organization Name:</th>
+                  <td>ORCID</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Home Page:</th>
+                  <td>
+                    <a target="_blank" href="https://orcid.org"
+                      >https://orcid.org</a
+                    >
+                  </td>
+                  <td></td>
+                </tr>
+
+                <tr>
+                  <th>Support Contact:</th>
+                  <td>ORCID Help &lt;help@orcid.org&gt;</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- end card-body -->
+        </div>
+        <!-- end collapse-... -->
+      </div>
+      <!-- end card -->
+
+      <form
+        action="/"
+        method="post"
+        autocomplete="off"
+        id="form01"
+        class="needs-validation"
+        novalidate="novalidate"
+      >
+        <input
+          type="hidden"
+          name="CSRF"
+          value="15bcf28b7aee2e533f3839964fd785ab"
+        />
+        <div class="form-group mt-3">
+          <div class="form-row align-items-center">
+            <div class="col text-center">
+              <input
+                type="submit"
+                name="submit"
+                class="btn btn-primary submit"
+                title="End your CILogon session and return to the front page. Note that this will not log you out at ORCID."
+                value="Log Off"
+              />
+            </div>
+            <!-- end col-auto -->
+          </div>
+          <!-- end form-row align-items-center -->
+        </div>
+        <!-- end form-group -->
+      </form>
+    </div>
+    <!-- Close Main Bootstrap Container -->
+    <footer class="footer">
+      <p>
+        For questions about this site, please see the
+        <a target="_blank" href="http://www.cilogon.org/faq">FAQs</a> or send
+        email to <a href="mailto:help@cilogon.org">help@cilogon.org</a>.
+      </p>
+      <p>
+        Know
+        <a target="_blank" href="http://ca.cilogon.org/responsibilities"
+          >your responsibilities</a
+        >
+        for using the CILogon Service.
+      </p>
+      <p>
+        See
+        <a target="_blank" href="http://ca.cilogon.org/acknowledgements"
+          >acknowledgements</a
+        >
+        of support for this site.
+      </p>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.18/dist/js/bootstrap-select.min.js"
+      integrity="sha256-qo0Cam4XJ0QQ06XnCiCFYBh3GDXU45j3lpUp+em2yBU="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="popover"]').popover();
+      });
+    </script>
+    <script>
+      $('#collapse-gencert').on('shown.bs.collapse', function () {
+        $('#password1').focus();
+      });
+    </script>
+    <script src="cilogon.js"></script>
+  </body>
+</html>

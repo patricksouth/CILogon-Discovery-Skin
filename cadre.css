@@ -55,7 +55,7 @@ div.logoheader {
 }
 
 div.logoheader h1 {
-    background: transparent url("/images/cadre.png") no-repeat top left;
+    background: transparent url("images/cadre.png") no-repeat top left;
     background-size: 100%;
     margin-top: 8px;
     margin-left: 8px;
